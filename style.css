@@ -1,10 +1,40 @@
 body
 {
-    background-color: #696969;
+    background-color: #212121;
 }
 
-.development_text
+.welcome_text
 {
-    text-align: center;
-    color: #ff0000;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 45vh;
+
+    color: #c9c9c9;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.about
+{
+    text-align: justify;
+
+    display: table;
+    margin: auto;
+
+    inline-size: 450px;
+
+    color: #a8a6a6;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+}
+
+.social
+{
+    text-align: justify;
+
+    display: table;
+    margin: auto;
 }
