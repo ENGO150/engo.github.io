@@ -38,3 +38,10 @@ body
     display: table;
     margin: auto;
 }
+
+.music
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
