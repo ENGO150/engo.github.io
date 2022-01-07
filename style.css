@@ -46,3 +46,8 @@ body
     right: 0;
     display: none;
 }
+
+.video
+{
+    display: none;
+}
