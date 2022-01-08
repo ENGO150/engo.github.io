@@ -1,9 +1,36 @@
+var videoDisplay = false;
+var musicDisplay = false;
+
 function videoFunction()
 {
-    document.getElementsByClassName("video")[0].style.display = "table";
+    var buffer;
+
+    if (videoDisplay)
+    {
+        buffer = "none";
+    } else
+    {
+        buffer = "table";
+    }
+
+    document.getElementsByClassName("video")[0].style.display = buffer;
+
+    videoDisplay = !videoDisplay;
 }
 
 function musicFunction()
 {
-    document.getElementsByClassName("music")[0].style.display = "table";
+    var buffer;
+
+    if (musicDisplay)
+    {
+        buffer = "none";
+    } else
+    {
+        buffer = "table";
+    }
+
+    document.getElementsByClassName("music")[0].style.display = buffer;
+
+    musicDisplay = !musicDisplay;
 }
