@@ -3,6 +3,11 @@ body
     background-color: #212121;
 }
 
+a
+{
+    color: #cc7bbb
+}
+
 .welcome_text
 {
     display: flex;
@@ -53,4 +58,10 @@ body
     bottom: 0;
     left: 0;
     display: none;
+}
+
+.reee
+{
+    color: #a8a6a6;
+    text-decoration: none;
 }
