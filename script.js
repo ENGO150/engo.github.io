@@ -1,7 +1,7 @@
 var videoDisplay = false;
 var musicDisplay = false;
 
-var easterEggNumber = 4;
+var easterEggNumber = 5;
 
 function videoFunction()
 {
@@ -45,4 +45,9 @@ function showInfo()
     {
         document.getElementsByClassName("hidden-text")[0].innerHTML = "";
     }, 5000);
+}
+
+function showAlert()
+{
+    alert("JEBAITED");
 }
