@@ -7,18 +7,55 @@
 
     <link rel="stylesheet" href="../../style.css">
     <style>
+        .countdown
+        {
+            color: #c9c9c9;
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
         .pic
         {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+
+            display: none;
         }
     </style>
 </head>
 <body>
+    <div class="countdown"></div>
+
     <div class="pic">
         <img src="../rogerroll.gif" alt="Roger Waters" width="600" height="707">
     </div>
+
+    <script>
+        var number = 4;
+
+        document.getElementsByClassName("countdown")[0].innerHTML = "Hot pic of Roger Waters in " + (number + 1) + "...";
+
+        setInterval(function()
+        {
+            if (number > 0)
+            {
+                document.getElementsByClassName("countdown")[0].innerHTML = "Hot pic of Roger Waters in " + number + "...";
+            } else
+            {
+                document.getElementsByClassName("countdown")[0].style.display = "none";
+                document.getElementsByClassName("pic")[0].style.display = "table";
+            }
+
+            number--;
+        }, 1000);
+    </script>
 </body>
 </html>
