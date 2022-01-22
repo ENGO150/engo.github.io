@@ -7,7 +7,7 @@ document.addEventListener("keydown", e =>
 {
     if (e.code != 'KeyR') return;
 
-    window.location.href = 'res/pages/roger.html';
+    window.location.href = 'res/pages/roger';
 });
 
 function videoFunction()
