@@ -3,6 +3,13 @@ var musicDisplay = false;
 
 var easterEggNumber = 5;
 
+document.addEventListener("keydown", e =>
+{
+    if (e.code != 'KeyR') return;
+
+    window.location.href = 'res/pages/roger.html';
+});
+
 function videoFunction()
 {
     var buffer;
