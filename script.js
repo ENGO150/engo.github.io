@@ -1,7 +1,7 @@
 var videoDisplay = false;
 var musicDisplay = false;
 
-var easterEggNumber = 5;
+var easterEggNumber = 6;
 
 document.addEventListener("keydown", e =>
 {
