@@ -22,7 +22,7 @@ function videoFunction()
         buffer = "table";
     }
 
-    document.getElementsByClassName("video")[0].style.display = buffer;
+    document.getElementsByClassName("twinkies")[0].style.display = buffer;
 
     videoDisplay = !videoDisplay;
 }
@@ -39,7 +39,7 @@ function musicFunction()
         buffer = "table";
     }
 
-    document.getElementsByClassName("music")[0].style.display = buffer;
+    document.getElementsByClassName("rickroll")[0].style.display = buffer;
 
     musicDisplay = !musicDisplay;
 }
