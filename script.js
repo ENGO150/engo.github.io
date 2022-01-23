@@ -3,9 +3,11 @@ var musicDisplay = false;
 
 var easterEggNumber = 6;
 
+var keyBlocked = false;
+
 document.addEventListener("keydown", e =>
 {
-    if (e.code != 'KeyR') return;
+    if (e.code != 'KeyR' || keyBlocked) return;
 
     window.location.href = 'res/pages/roger';
 });
