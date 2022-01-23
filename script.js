@@ -1,7 +1,7 @@
 var videoDisplay = false;
 var musicDisplay = false;
 
-var easterEggNumber = 8;
+var easterEggNumber = 9;
 
 var keyBlocked = false;
 
@@ -18,6 +18,15 @@ document.addEventListener("keydown", e =>
 
     new Audio('res/tongo.mp3').play();
 
+    keyBlocked = true;
+});
+
+document.addEventListener("keydown", e =>
+{
+    if (e.code != 'KeyX' || keyBlocked) return;
+
+    document.body.style.backgroundImage = 'url(res/wallpaper.png)';
+    
     keyBlocked = true;
 });
 
