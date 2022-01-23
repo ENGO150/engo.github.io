@@ -1,7 +1,7 @@
 var videoDisplay = false;
 var musicDisplay = false;
 
-var easterEggNumber = 6;
+var easterEggNumber = 7;
 
 var keyBlocked = false;
 
@@ -10,6 +10,15 @@ document.addEventListener("keydown", e =>
     if (e.code != 'KeyR' || keyBlocked) return;
 
     window.location.href = 'res/pages/roger';
+});
+
+document.addEventListener("keydown", e =>
+{
+    if (e.code != 'KeyT' || keyBlocked) return;
+
+    new Audio('res/tongo.mp3').play();
+
+    keyBlocked = true;
 });
 
 function videoFunction()
