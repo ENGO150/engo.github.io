@@ -1,7 +1,7 @@
 var videoDisplay = false;
 var musicDisplay = false;
 
-var easterEggNumber = 7;
+var easterEggNumber = 8;
 
 var keyBlocked = false;
 
@@ -17,6 +17,15 @@ document.addEventListener("keydown", e =>
     if (e.code != 'KeyT' || keyBlocked) return;
 
     new Audio('res/tongo.mp3').play();
+
+    keyBlocked = true;
+});
+
+document.addEventListener("keydown", e =>
+{
+    if (e.code != 'KeyP' || keyBlocked) return;
+
+    new Audio('res/putin.mp3').play();
 
     keyBlocked = true;
 });
