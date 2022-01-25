@@ -4,9 +4,17 @@ const TITLE = "Dark Side of The Moon";
 var videoDisplay = false;
 var musicDisplay = false;
 
-const easterEggNumber = 9;
+const easterEggNumber = 10;
 
 var keyBlocked = false;
+
+const textToChange =
+[
+    'welcome_text',
+    'about',
+    'hidden-text',
+    'social'
+];
 
 // AUTOMATICALLY CALLED
 if (document.title.toString() == "")
@@ -45,6 +53,19 @@ document.addEventListener("keydown", e =>
     if (e.code != 'KeyP' || keyBlocked) return;
 
     new Audio('res/putin.mp3').play();
+
+    keyBlocked = true;
+});
+
+document.addEventListener("keydown", e =>
+{
+    if (e.code != 'KeyC' || keyBlocked) return;
+
+
+    for (var i = 0; i < textToChange.length; i++)
+    {
+        document.getElementsByClassName(textToChange[i])[0].style.fontFamily = '"Comic Sans MS", "Comic Sans", cursive';
+    }
 
     keyBlocked = true;
 });
