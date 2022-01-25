@@ -1,10 +1,18 @@
 // VARIABLES
+const TITLE = "Dark Side of The Moon";
+
 var videoDisplay = false;
 var musicDisplay = false;
 
 var easterEggNumber = 9;
 
 var keyBlocked = false;
+
+// AUTOMATICALLY CALLED
+if (document.title.toString() == "")
+{
+    document.title = TITLE;
+}
 
 // EVENTS
 document.addEventListener("keydown", e =>
