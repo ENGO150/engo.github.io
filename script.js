@@ -4,7 +4,7 @@ const TITLE = "Dark Side of The Moon";
 var videoDisplay = false;
 var musicDisplay = false;
 
-var easterEggNumber = 9;
+const easterEggNumber = 9;
 
 var keyBlocked = false;
 
