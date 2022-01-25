@@ -1,3 +1,4 @@
+// VARIABLES
 var videoDisplay = false;
 var musicDisplay = false;
 
@@ -5,6 +6,7 @@ var easterEggNumber = 9;
 
 var keyBlocked = false;
 
+// EVENTS
 document.addEventListener("keydown", e =>
 {
     if (e.code != 'KeyR' || keyBlocked) return;
@@ -39,6 +41,7 @@ document.addEventListener("keydown", e =>
     keyBlocked = true;
 });
 
+// FUNCTIONS
 function videoFunction()
 {
     var buffer;
