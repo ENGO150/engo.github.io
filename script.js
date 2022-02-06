@@ -12,10 +12,10 @@ let caughtClicked = 0;
 
 const textToChange =
 [
-    'welcome_text',
-    'about',
-    'hidden-text',
-    'social'
+    "welcome_text",
+    "about",
+    "hidden-text",
+    "social"
 ];
 
 // AUTOMATICALLY CALLED
@@ -27,41 +27,41 @@ if (document.title.toString() == "")
 // EVENTS
 document.addEventListener("keydown", e =>
 {
-    if (e.code != 'KeyR' || keyBlocked) return;
+    if (e.code != "KeyR" || keyBlocked) return;
 
-    window.location.href = 'res/pages/roger';
+    window.location.href = "res/pages/roger";
 });
 
 document.addEventListener("keydown", e =>
 {
-    if (e.code != 'KeyT' || keyBlocked) return;
+    if (e.code != "KeyT" || keyBlocked) return;
 
-    new Audio('res/tongo.mp3').play();
+    new Audio("res/tongo.mp3").play();
 
     keyBlocked = true;
 });
 
 document.addEventListener("keydown", e =>
 {
-    if (e.code != 'KeyX' || keyBlocked) return;
+    if (e.code != "KeyX" || keyBlocked) return;
 
-    document.body.style.backgroundImage = 'url(res/wallpaper.png)';
+    document.body.style.backgroundImage = "url(res/wallpaper.png)";
     
     keyBlocked = true;
 });
 
 document.addEventListener("keydown", e =>
 {
-    if (e.code != 'KeyP' || keyBlocked) return;
+    if (e.code != "KeyP" || keyBlocked) return;
 
-    new Audio('res/putin.mp3').play();
+    new Audio("res/putin.mp3").play();
 
     keyBlocked = true;
 });
 
 document.addEventListener("keydown", e =>
 {
-    if (e.code != 'KeyC' || keyBlocked) return;
+    if (e.code != "KeyC" || keyBlocked) return;
 
 
     for (var i = 0; i < textToChange.length; i++)
@@ -132,6 +132,6 @@ function caughtCountdown()
 
     setTimeout(function ()
     {
-        document.body.style.backgroundImage = 'url(res/4k.gif)';
+        document.body.style.backgroundImage = "url(res/4k.gif)";
     }, 3000);
 }
