@@ -8,6 +8,8 @@ const easterEggNumber = 10;
 
 let keyBlocked = false;
 
+let caughtClicked = 0;
+
 const textToChange =
 [
     'welcome_text',
@@ -118,4 +120,18 @@ function showInfo()
 function showAlert()
 {
     alert("JEBAITED");
+}
+
+function caughtCountdown()
+{
+    caughtClicked++;
+
+    if (caughtClicked != 12) return;
+
+    document.getElementsByClassName("age")[0].innerHTML = "12";
+
+    setTimeout(function ()
+    {
+        document.body.style.backgroundImage = 'url(res/4k.gif)';
+    }, 3000);
 }
