@@ -1,12 +1,12 @@
 // VARIABLES
 const TITLE = "Dark Side of The Moon";
 
-var videoDisplay = false;
-var musicDisplay = false;
+let videoDisplay = false;
+let musicDisplay = false;
 
 const easterEggNumber = 10;
 
-var keyBlocked = false;
+let keyBlocked = false;
 
 const textToChange =
 [
