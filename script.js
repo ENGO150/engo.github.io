@@ -138,8 +138,10 @@ function caughtCountdown()
 
 function waitForEpsilon()
 {
-    setTimeout(function ()
-    {
-        window.location.href = "res/pages/epsilon";
-    }, 60000);
+    setTimeout(function () {epsilon()}, 60000);
+}
+
+function epsilon()
+{
+    window.location.href = "res/pages/epsilon";
 }
