@@ -135,3 +135,11 @@ function caughtCountdown()
         document.body.style.backgroundImage = "url(res/4k.gif)";
     }, 3000);
 }
+
+function waitForEpsilon()
+{
+    setTimeout(function ()
+    {
+        window.location.href = "res/pages/epsilon";
+    }, 60000);
+}
