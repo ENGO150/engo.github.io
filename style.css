@@ -5,7 +5,9 @@ body
 
 a
 {
-    color: #cc7bbb
+    color: #cc7bbb;
+
+    text-shadow: none;
 }
 
 .welcome_text
@@ -19,6 +21,8 @@ a
 
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
+
+    text-shadow: 1.5px 1.5px #000000;
 }
 
 .about
@@ -34,6 +38,8 @@ a
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: bold;
+
+    text-shadow: 1.5px 1.5px #000000;
 }
 
 .social
