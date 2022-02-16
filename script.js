@@ -1,6 +1,4 @@
 // VARIABLES
-const TITLE = "Dark Side of The Moon";
-
 let videoDisplay = false;
 let musicDisplay = false;
 
@@ -17,12 +15,6 @@ const textToChange =
     "hidden-text",
     "social"
 ];
-
-// AUTOMATICALLY CALLED
-if (document.title.toString() == "")
-{
-    document.title = TITLE;
-}
 
 // EVENTS
 document.addEventListener("keydown", e =>
