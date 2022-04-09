@@ -138,7 +138,7 @@ function caughtCountdown()
 
 function waitForEpsilon()
 {
-    setTimeout(function () {epsilon()}, 60000);
+    setTimeout(function () {epsilon()}, (60 * 5) * 1000);
 }
 
 function epsilon()
