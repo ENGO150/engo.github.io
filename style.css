@@ -1,24 +1,13 @@
 body
 {
     background-color: #212121;
-
-    background-image: url("http://207.180.212.190/dragula.gif");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 a
 {
     color: #cc7bbb;
 
-    /*text-shadow: none;*/
-}
-
-mark
-{
-    color: #c9c9c9;
-    background-color: #000000;
+    text-shadow: none;
 }
 
 .welcome_text
@@ -33,7 +22,7 @@ mark
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 
-    /*text-shadow: 1.5px 1.5px #000000;*/
+    text-shadow: 1.5px 1.5px #000000;
 }
 
 .about
@@ -50,7 +39,7 @@ mark
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: bold;
 
-    /*text-shadow: 1.5px 1.5px #000000;*/
+    text-shadow: 1.5px 1.5px #000000;
 }
 
 .social
