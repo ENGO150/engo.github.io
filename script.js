@@ -16,14 +16,6 @@ const textToChange =
     "social"
 ];
 
-function checkIP(json)
-{
-    if (json.country == "RU")
-    {
-        window.location.href = "res/ukraine.png";
-    }
-}
-
 // EVENTS
 document.addEventListener("keydown", e =>
 {
